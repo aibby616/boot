@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>anli</title>
+	<link rel="stylesheet" href="bs/css/bootstrap.css">
+	<style>
+	body{
+	padding-top:50px;
+	
+	}
+	.carousel{
+	background-color:black;
+	height:500px;
+	}
+	.carousel .item{
+	background:black;
+	height:500px;
+	}
+	.carousel img{
+	width:100%
+	}
+	.text-muted{
+	font-size:50%;
+	}
+	</style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#">信息技术企业</a>
+</div>
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li class="active"><a href="#">首页</a></li>
+<li><a href="#">帮助</a></li>
+<li><a href="#" data-toggle="modal" data-target="#target">关于</a></li>
+<li class="dropdown">
+<a href="#"class="dropdown-toggle"data-toggle="dropdown">简介<span class="caret"></span></a>
+<ul class="dropdown-menu"role="menu">
+<li><a href="#home">华为</a></li>
+<li><a href="#profile">苹果</a></li>
+<li><a href="#messages">联想</a></li>
+<li class="divider"></li>
+<li><a href="#">其他</a></li>
+</ul>
+</li>
+</ul>
+<form class="navbar-form navbar-right" role="search" action="#" method="get" onsubmit="return checkForm()">
+<div class="form-group">
+<input type="text" class="form-control" id="username" placeholder="用户名">
+<input type="text" class="form-control" id="password" placeholder="密码">
+</div>
+<button type="submit" class="btn btn-default">登录</button>
+</form>
+</div>
+</div>
+</nav>
+	
+	
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/13.jpg" >
+      <div class="carousel-caption"style="font-size:30px;">
+		HUAWEI
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/14.jpg" >
+      <div class="carousel-caption"style="font-size:30px;">
+        APPLE
+      </div>
+    </div>
+	<div class="item">
+      <img src="images/15.jpg" >
+      <div class="carousel-caption"style="font-size:30px;">
+        LENOVEN
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+	<div class="container" >
+	<div class="row">
+	<div class="col-md-4" style="text-align:center;margin-top:70px;"><img src="images/13.jpg"/>
+	<h3>HUAWEI</h3><p>服务全球运营商50强中的45家及全球1/3的人口</p>
+	<a type="button" href="https://www.huawei.com/cn/?ic_medium=direct&ic_source=surlent"class="btn btn-default">点击了解</a></div>
+	<div class="col-md-4" style="text-align:center;margin-top:70px;"><img src="images/14.jpg"/>
+	<h3>APPLE</h3><p>超过可口可乐成为世界最有价值品牌</p>
+	<a type="button" href="http://www.apple.com/cn/shop/go/apple_com?cid=aos-CN-kwba-brand&mnid=1IkePb9BS-dc_mtid_18707vxu38484_pcrid_27894890829_&mtid=18707vxu38484&aosid=p238&anonymizeip=set"class="btn btn-default">点击了解</a></div>
+	<div class="col-md-4" style="text-align:center;margin-top:70px; "><img src="images/15.jpg"/>
+	<h3>LENOVEN</h3><p>《财富》世界500强：位列212位</p>
+	<a type="button" href="https://www.lenovo.com/us/en/"class="btn btn-default">点击了解</a></div>
+	</div>
+	
+	<hr style="margin-bottom:150px;margin-top:150px;">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist" id="tab-list">
+    <li role="presentation" class="active" ><a href="#home" aria-controls="home" role="tab" data-toggle="tab" id="a">华为</a></li>
+    <li role="presentation" ><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">苹果</a></li>
+    <li role="presentation" ><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">联想</a></li>
+    
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+	<div class="row">
+	<div class="col-md-7">
+	<h2 class="feature-heading" >HUAWEI<span class="text-muted">服务全球运营商50强中的45家及全球1/3的人口</span></h2>
+	<p class="lead">华为消费者业务产品全面覆盖手机、移动宽带终端、终端云等，凭借自身的全球化网络优势、全球化运营能力，致力于将最新的科技带给消费者，让世界各地享受到技术进步的喜悦，以行践言，实现梦想</p>
+	</div>
+	<div class="col-md-5">
+	<img class="feature-image img-responsive" src="images/13.jpg"></div>
+	</div>
+	</div>
+    <div role="tabpanel" class="tab-pane" id="profile">
+	<div class="row">
+	<div class="col-md-5">
+	<img class="feature-image img-responsive" src="images/14.jpg"></div>
+	<div class="col-md-7">
+	<h2 class="feature-heading">APPLE<span class="text-muted">超过可口可乐成为世界最有价值品牌</span></h2>
+	<p class="lead">苹果公司（Apple Inc. ）是美国一家高科技公司。由史蒂夫·乔布斯、斯蒂夫·沃兹尼亚克和罗·韦恩(Ron Wayne)等人于1976年4月1日创立，并命名为美国苹果电脑公司（Apple Computer Inc. ），2007年1月9日更名为苹果公司，总部位于加利福尼亚州的库比蒂诺。</p>
+	</div>
+	</div></div>
+    <div role="tabpanel" class="tab-pane" id="messages">
+	<div class="row">
+	<div class="col-md-7">
+	<h2 class="feature-heading">LENOVEN<span class="text-muted">《财富》世界500强：位列212位</span></h2>
+	<p class="lead">联想集团是1984年中国科学院计算技术研究所投资20万元人民币，由11名科技人员创办，是中国的一家在信息产业内多元化发展的大型企业集团，和富有创新性的国际化的科技公司。</p>
+	</div>
+	<div class="col-md-5">
+	<img class="feature-image img-responsive" src="images/15.jpg"></div>
+	</div>
+	</div>
+  </div>
+</div>
+<hr>
+<footer class="color-F00"> 
+　　© DIVCSS5.COM 版权所有 
+　　<p class="pull-right"><a href="#">回到顶部</a></p>
+</footer> 
+<div class="modal fade"  id="target">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">关于</h4>
+      </div>
+      <div class="modal-body">
+        <p>没有更多了</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script src="bs/js/jquery-3.4.1.min.js"></script>
+<script src="bs/js/bootstrap.js"></script>
+<script>
+$(document).ready(function(){
+$("#bs-example-navbar-collapse-1 .dropdown-menu a").click(function(){
+var href = $(this).attr("href");
+$("#tab-list a[href='" + href + "']").tab("show");
+});
+});
+</script>
+<script>
+	function checkForm(){
+	//获取用户名及其内容
+	var usernameObj=document.getElementById("username");
+	var username=usernameObj.value;
+	//判断value是否为空
+	if(username==null || username==""){
+	alert("用户名不能为空");
+	return false;}
+	//获取密码及其内容
+	var pwdObj=document.getElementById("password");
+	var pwdValue=pwdObj.value;
+	if(pwdValue==null || pwdValue==""){
+	alert("密码不为空");
+	return false;}
+	return true;
+	}
+	</script>
+</html>
